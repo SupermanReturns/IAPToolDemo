@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    ViewController *rootVC=[[ViewController alloc]init];
+    self.window.rootViewController = rootVC;
     // Override point for customization after application launch.
+    
+    /**启动IAP工具类*/
+    [[SIAPManager shared] startManager];
+    
     return YES;
 }
 
@@ -45,6 +56,8 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    /**结束IAP工具类*/
+    [[SIAPManager shared] stopManager];
 }
 
 

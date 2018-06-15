@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (category)
++ (NSString *)chindDateFormate:(NSDate *)date;
 
 @end

@@ -15,6 +15,11 @@
 		CFCE856220D397D500F9C10B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE856120D397D500F9C10B /* main.m */; };
 		CFCE856C20D397D600F9C10B /* IAPToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE856B20D397D600F9C10B /* IAPToolDemoTests.m */; };
 		CFCE857720D397D600F9C10B /* IAPToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE857620D397D600F9C10B /* IAPToolDemoUITests.m */; };
+		CFCE858620D39C8B00F9C10B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE858520D39C8B00F9C10B /* StoreKit.framework */; };
+		CFCE858A20D39CEF00F9C10B /* SIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE858920D39CEF00F9C10B /* SIAPManager.m */; };
+		CFCE858E20D3A1DF00F9C10B /* SandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE858D20D3A1DF00F9C10B /* SandBoxHelper.m */; };
+		CFCE859120D3A2D600F9C10B /* NSString+category.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE859020D3A2D600F9C10B /* NSString+category.m */; };
+		CFCE859420D3A6B500F9C10B /* NSDate+category.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE859320D3A6B500F9C10B /* NSDate+category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		CFCE857220D397D600F9C10B /* IAPToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAPToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE857620D397D600F9C10B /* IAPToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPToolDemoUITests.m; sourceTree = "<group>"; };
 		CFCE857820D397D600F9C10B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCE858520D39C8B00F9C10B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CFCE858820D39CEF00F9C10B /* SIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAPManager.h; sourceTree = "<group>"; };
+		CFCE858920D39CEF00F9C10B /* SIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIAPManager.m; sourceTree = "<group>"; };
+		CFCE858B20D39EEF00F9C10B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CFCE858C20D3A1DF00F9C10B /* SandBoxHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandBoxHelper.h; sourceTree = "<group>"; };
+		CFCE858D20D3A1DF00F9C10B /* SandBoxHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandBoxHelper.m; sourceTree = "<group>"; };
+		CFCE858F20D3A2D600F9C10B /* NSString+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+category.h"; sourceTree = "<group>"; };
+		CFCE859020D3A2D600F9C10B /* NSString+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+category.m"; sourceTree = "<group>"; };
+		CFCE859220D3A6B500F9C10B /* NSDate+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+category.h"; sourceTree = "<group>"; };
+		CFCE859320D3A6B500F9C10B /* NSDate+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE858620D39C8B00F9C10B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				CFCE856A20D397D600F9C10B /* IAPToolDemoTests */,
 				CFCE857520D397D600F9C10B /* IAPToolDemoUITests */,
 				CFCE855020D397CF00F9C10B /* Products */,
+				CFCE858420D39C8B00F9C10B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +122,13 @@
 				CFCE855320D397CF00F9C10B /* AppDelegate.m */,
 				CFCE855520D397CF00F9C10B /* ViewController.h */,
 				CFCE855620D397CF00F9C10B /* ViewController.m */,
+				CFCE858720D39CAF00F9C10B /* IAPManager */,
 				CFCE855820D397CF00F9C10B /* Main.storyboard */,
 				CFCE855B20D397D500F9C10B /* Assets.xcassets */,
 				CFCE855D20D397D500F9C10B /* LaunchScreen.storyboard */,
 				CFCE856020D397D500F9C10B /* Info.plist */,
 				CFCE856120D397D500F9C10B /* main.m */,
+				CFCE858B20D39EEF00F9C10B /* PrefixHeader.pch */,
 			);
 			path = IAPToolDemo;
 			sourceTree = "<group>";
@@ -130,6 +149,29 @@
 				CFCE857820D397D600F9C10B /* Info.plist */,
 			);
 			path = IAPToolDemoUITests;
+			sourceTree = "<group>";
+		};
+		CFCE858420D39C8B00F9C10B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE858520D39C8B00F9C10B /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCE858720D39CAF00F9C10B /* IAPManager */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE858820D39CEF00F9C10B /* SIAPManager.h */,
+				CFCE858920D39CEF00F9C10B /* SIAPManager.m */,
+				CFCE858C20D3A1DF00F9C10B /* SandBoxHelper.h */,
+				CFCE858D20D3A1DF00F9C10B /* SandBoxHelper.m */,
+				CFCE858F20D3A2D600F9C10B /* NSString+category.h */,
+				CFCE859020D3A2D600F9C10B /* NSString+category.m */,
+				CFCE859220D3A6B500F9C10B /* NSDate+category.h */,
+				CFCE859320D3A6B500F9C10B /* NSDate+category.m */,
+			);
+			path = IAPManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE859420D3A6B500F9C10B /* NSDate+category.m in Sources */,
+				CFCE858A20D39CEF00F9C10B /* SIAPManager.m in Sources */,
+				CFCE859120D3A2D600F9C10B /* NSString+category.m in Sources */,
 				CFCE855720D397CF00F9C10B /* ViewController.m in Sources */,
 				CFCE856220D397D500F9C10B /* main.m in Sources */,
 				CFCE855420D397CF00F9C10B /* AppDelegate.m in Sources */,
+				CFCE858E20D3A1DF00F9C10B /* SandBoxHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +480,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IAPToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = IAPToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +500,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IAPToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = IAPToolDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

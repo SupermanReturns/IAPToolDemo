@@ -10,4 +10,6 @@
 
 @interface NSString (category)
 
++ (NSString *)uuid;
+
 @end
